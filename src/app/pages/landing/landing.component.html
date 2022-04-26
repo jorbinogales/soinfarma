@@ -1,0 +1,92 @@
+
+<div class="container-fluid bg-gray-light" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+                <div class="img">
+                    <div class="box box-green"></div>
+                    <img src="assets/img/home/form/form.png" alt="" >
+                    <div class="box box-blue"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form">
+                    <div class="text">
+                        <h2 class="text-center">Registro para</h2>
+                        <h4 class="text-center">Adquirir Software</h4>
+                        <div class="linea"></div>
+                        <p class="text-center">Formulario de contacto</p>
+                    </div>
+
+                    <div *ngIf="loading">
+                        <app-loading></app-loading>
+                    </div>
+
+                    <div *ngIf="send" class="alert alert-success" role="alert">
+                         Registrado con exito
+                    </div>
+                    
+
+                    <div *ngIf="error" class="alert alert-danger" role="alert">
+                        Hubo errores en su registro
+                   </div>
+
+                    <div *ngIf="!loading && !send">
+                        <form (submit)="create()" [formGroup]="form" >
+                            <div class="form-group">
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                id="name" 
+                                aria-describedby="emailHelp" 
+                                placeholder="Nombre y Apellido"
+                                formControlName="name"
+                                name="name">
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                id="business" 
+                                aria-describedby="emailHelp" 
+                                placeholder="Empresa"
+                                formControlName="business"
+                                name="business">
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                type="email" 
+                                class="form-control" 
+                                id="email" 
+                                aria-describedby="emailHelp" 
+                                placeholder="Email"
+                                formControlName="email"
+                                name="email">
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                id="state" 
+                                aria-describedby="emailHelp"
+                                placeholder="Estado"
+                                formControlName="state"
+                                name="state">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" 
+                                class="form-control" 
+                                id="phone" 
+                                aria-describedby="emailHelp"
+                                placeholder="Teléfono"
+                                formControlName="phone"
+                                name="phone">
+                            </div>
+                            <input type="submit" value="ENVIAR" class="d-block w-100 btn btn-green p-3">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

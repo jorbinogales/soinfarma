@@ -1,0 +1,59 @@
+[
+   
+    {
+        "pregunta":"¿Los montos de las operaciones están expresados solo en bolívares?",
+        "respuesta":"No, los montos están reflejados en bolívares y en moneda extranjera, además puedes configurar la tasa del día cuántas veces desees siempre y cuando todas las cajas estén cerradas."
+    },
+    {
+        "pregunta":"¿Qué hago si se extravió un cierre Z?",
+        "respuesta":"Puedes reimprimirlo. Búscalo en la ventanilla “Cierre Diario Caja”, coloca el número de cierre z que deseas reimprimir y oprime el botón “reimprimir”. Sin embargo, este documento será de tipo No Fiscal."
+    },
+    {
+        "pregunta":"¿Puedo alterar el costo de los productos en la lista de precios?",
+        "respuesta":"Sí, siempre y cuando el parámetro “Cambiar costo de Lista de Precio”, ubicado en módulo Configuración – Parámetro, se encuentre en SI."
+    },
+    {
+        "pregunta":"¿La rentabilidad de los productos puede ser cambiada?",
+        "respuesta":"Puedes hacerlo de forma individual o masiva. De forma individual, seleccionas el producto a cambiar la rentabilidad, haces doble click e ingresas el porcentaje a cambiar. De forma masiva, haces click derecho, marcar todos y luego nuevamente click derecho, rentabilidad e ingresamos el porcentaje de rentabilidad a cambiar. Una vez finalizado, se deberán guardar los cambios."
+    },
+    {
+        "pregunta":"¿Por qué los precios de los productos cambian automáticamente?",
+        "respuesta":"Porque estos se ajustan al costo del proveedor, siempre y cuando éste sea mayor al costo de la farmacia pero si el costo de la farmacia es mayor al del proveedor, este no se verá afectado."
+    },
+    {
+        "pregunta":"¿Se pueden modificar los datos de los proveedores luego de haberlos registrado?",
+        "respuesta":"Si, en el módulo de proveedor puedes buscar el proveedor que desees y modificar los datos que se requieran."
+    },
+    {
+        "pregunta":"¿Puedo eliminar completamente una orden de compra?",
+        "respuesta":"Sí, siempre y cuando su estatus sea abierto o grabado."
+    },
+    {
+        "pregunta":"¿Puedo eliminar productos de una orden de compra?",
+        "respuesta":"Si, solo debes seleccionar el producto en la orden de compra a enviar y hacer click en Supr."
+    },
+    {
+        "pregunta":"¿Las órdenes de compra solo se pueden hacer de forma manual?",
+        "respuesta":"También puedes hacerlas de forma automática. Presionamos click en Nuevo o F7 del teclado, seleccionamos al proveedor y presionas Aceptar. Luego, le damos click en “Sugerido” y se deberá seleccionar el tipo de orden de compra a realizar, ya sea por fallas o por reposición."
+    },
+    {
+        "pregunta":"En el módulo Recepción de Mercancía ¿Puedo recepcionar una mercancía por orden de compra o por factura?",
+        "respuesta":"Puedes hacerlo de ambas maneras. También podrás registrar facturas de servicios."
+    },
+    {
+        "pregunta":"¿Puedo escoger una sola ubicación para los productos al recepcionar la mercancía?",
+        "respuesta":"Sí, puedes ingresar los productos en una sola ubicación o dividirse en varias ubicaciones."
+    },
+    {
+        "pregunta":"¿Puedo modificar el registro de un producto?",
+        "respuesta":"Si, en la opción Modificar se habilitarán todos los campos por cada una de las pestañas que podrán ser editados."
+    },
+    {
+        "pregunta":"¿Todos los usuarios del sistema tendrán el mismo rol?",
+        "respuesta":"El sistema permite establecer el Rol necesario para cada usuario. "
+    },
+    {
+        "pregunta":"¿Puedo modificar el descuento en el punto de venta?",
+        "respuesta":"Solo si el usuario tiene asignado el rol de “modificar descuentos” en su ficha de usuario. O si el parámetro “Validar usuario en descuento por producto”, en el módulo Configuración – Parámetro, se encuentra en SI."
+    }
+]

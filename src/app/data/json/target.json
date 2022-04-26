@@ -1,0 +1,32 @@
+[
+    {
+        "title":"Control de inventario",
+        "description":"Permite tener un eficiente monitoreo y una contabilidad actualizada de tu inventario.",
+        "icon": "beneficio1.svg"
+    },
+    {
+        "title":"Ventas y Compras",
+        "description":"gestiona tus procesos de ventas, facturación y base de datos de clientes de tu farmacia. ",
+        "icon": "beneficio2.svg"
+    },
+    {
+        "title":"Gestión de Proveedores",
+        "description":"Administración de proveedores y seguimiento para asegurar el correcto suministro de tu farmacia. ",
+        "icon": "beneficio3.svg"
+    },
+    {
+        "title":"Integración Digital ",
+        "description":"Integración digital con tus principales proveedores de inventario.",
+        "icon": "beneficio5.svg"
+    },
+    {
+        "title":"Rapidez y solidez",
+        "description":"Optimización en los tiempos de operaciones back y front de tu farmacia.",
+        "icon": "beneficio6.svg"
+    },
+    {
+        "title":"Soporte técnico",
+        "description":"Asistencia técnica especializada disponible todo el año.",
+        "icon": "beneficio4.svg"
+    }
+]

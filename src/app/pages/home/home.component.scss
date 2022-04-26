@@ -1,0 +1,320 @@
+#top{
+    min-height: 700px;
+}
+
+#top .content{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#top .carousel{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 700px;
+    top:0px;
+    left:0px;
+    z-index: 50;
+    margin:auto;
+}
+
+#top .carousel-inner{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+#top .carousel .carousel-item{
+    position:absolute;
+    top:0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#top .carousel .carousel-item .bg{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.7);
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+#top .carousel .carousel-item .text{
+    display: block;
+    width: 100%;
+    margin-top: 250px;
+    margin-left:150px;
+    z-index: 10;
+    position: relative;
+    max-width: 500px;
+}
+
+#top .carousel .carousel-item .text h2{
+    font-size: 35px;
+}
+
+#top .carousel .carousel-item .text p{
+    font-size: 18px;
+}
+
+#top .controls{
+    display: block;
+    width: 85%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+.form{
+    display: block;
+    position:relative;
+    background-color: var(--bg-gray);
+    padding: 25px 25px;
+    max-width: 400px;
+    height: auto;
+    margin:auto;
+    top:auto;
+    bottom:auto;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    margin:auto;
+    position: relative;
+    margin-top: 100px;
+    max-width:500px;
+}
+
+.img img{
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.form{
+    display:block;
+}
+
+.box{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top:auto;
+    margin-bottom: auto;
+    &.box-blue{
+        bottom:-50px;
+        right:-50px;
+        background-color: var(--bg-blue);
+        border-bottom-right-radius: 50px;
+    }
+    &.box-green{
+        top:-50px;
+        left:-50px;
+        background-color: var(--bg-green);
+        border-top-left-radius: 50px;
+    }
+}
+
+.form-control{
+    border: 2px solid transparent !important;
+}
+
+.form-control:hover{
+    border: 2px solid transparent !important;
+}
+
+.form-group{
+    background-color: var(--bg-gray-strong) !important;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: block;
+    border: inherit !important;
+}
+
+.form-control:focus{
+    border-bottom: 2px solid var(--bg-green) !important;
+    box-shadow: inherit !important;
+}
+
+#beneficios h3{
+    position:relative;
+    margin-bottom:50px;
+}
+
+#beneficios{
+    z-index: 100;
+    position: relative;
+    max-height: 800px;
+}
+
+#beneficios .target{
+    display: block;
+    min-height: 500px;
+    border-top-left-radius: 300px;
+    position:relative;
+    top:-200px;
+    background-color:white;
+    padding-top:100px;
+}
+
+#beneficios .target .icon{
+    background-color: var(--bg-green-light);
+    display: block;
+    width: 100%;
+    height:100%;
+    max-width: 125px;
+    max-height: 125px;
+    padding: 35px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin:auto;
+    position: inherit;
+}
+
+#beneficios .beneficio:hover .icon{
+    background-color: var(--bg-green);
+}
+
+#beneficios .benefico{
+    position:relative;
+    display: block;
+    margin-top:55px;
+}
+
+#beneficios .beneficio:hover{
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+}
+
+#beneficios .beneficio strong{
+    display: block;
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#beneficios .beneficio p{
+    text-align: center;
+    max-width: 200px;
+    margin:auto;
+    min-height: 200px;
+}
+
+#beneficios .beneficio:hover strong{
+    display: block;
+    color: var(--bg-green);
+}
+
+.scroll-one{
+    position: absolute;
+    max-width: 100px;
+    left:0px;
+    bottom:0px;
+}
+
+.scroll-two{
+    position: absolute;
+    max-width: 100px;
+    right:0px;
+    top:0px;
+}
+
+#support{
+    position: relative;
+    background-image: url('./../../../assets/img/home/support/bg.jpg');
+    background-size:cover;
+    background-position: top center;
+}
+
+#support .bg-green{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #246317;
+    opacity: .8;
+}
+
+.testimonial{
+    min-height: 350px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.testimonial .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.testimonial span{
+    position:absolute;
+    top:25px;
+    display:block;
+    font-size: 40px;
+    text-align: center;
+}
+
+.testimonial i{
+    text-align: center;
+}
+
+
+.testimonial p{
+    position: absolute;
+    bottom:35px;
+    left:0;
+    right:0;
+}
+
+@media only screen and (max-width:968px){
+    #top .controls{
+        width: 100%;
+    }
+
+    #top .carousel .carousel-item .text{
+        margin-top:150px;
+        width: 60%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    #top .carousel .carousel-item .text h2{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    #top .carousel .carousel-item .text p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #beneficios{
+        max-height: inherit;
+    }
+    
+}

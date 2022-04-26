@@ -1,0 +1,151 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$soinfarmaAngular-primary: mat.define-palette(mat.$indigo-palette);
+$soinfarmaAngular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$soinfarmaAngular-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$soinfarmaAngular-theme: mat.define-light-theme((
+  color: (
+    primary: $soinfarmaAngular-primary,
+    accent: $soinfarmaAngular-accent,
+    warn: $soinfarmaAngular-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($soinfarmaAngular-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Roleway';
+    src: url('assets/font/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roleway bold';
+    src: url('assets/font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roleway Extra bold';
+    src: url('assets/font/Raleway-ExtraBold.ttf');
+}
+
+ul{
+    list-style-type: none;
+}
+
+p,strong, h1, h2, h3, h4, h5, i, button, input, textarea, i{
+    font-family: 'Roleway' !important;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: bold;
+}
+
+:root{
+    --bg-green: #56B746;
+    --bg-green-light: #91CE84;
+    --bg-blue: #0B2242;
+    --bg-gray-light: #E8E8E8;
+    --bg-gray: #DADAD9;
+    --bg-gray-strong: #B5B6B6;
+}
+
+p{
+    line-height: 25px;
+}
+
+.roleway-bold{
+    font-family: 'Roleway bold' !important;
+}
+
+.roleway-extrabold{
+    font-family: 'Roleway Extra bold' !important;
+}
+
+.bg-gray-light{
+    background-color: var(--bg-gray-light);
+}
+
+.bg-gray-strong{
+    background-color: var(--bg-gray-strong);
+}
+
+.bg-blue{
+    background-color: var(--bg-blue)
+}
+
+.bg-green{
+    background-color: var(--bg-green)
+}
+
+.btn-white{
+    background-color: white !important;
+}
+
+
+.btn.btn-green{
+    display: block;
+    background-color: var(--bg-green);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* TEXT */
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-white{
+    color: white !important;
+}
+
+.text-green{
+    color: var(--bg-green) !important;
+}
+
+.text-blue{
+    color: var(--bg-blue) !important;
+}
+
+.text-gray{
+    color: var(--bg-gray-strong) !important;
+}
+
+/* FLEX */
+
+.flex{
+    display:flex
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-auto li{
+    margin: auto;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

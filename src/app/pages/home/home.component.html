@@ -1,0 +1,230 @@
+
+
+<!-- TOP BAR  -->
+<section id="top">
+    <div class="content">
+        <div class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div 
+                class="carousel-item active" 
+                id="carousel-item-1"
+                style="background-image: url('assets/img/home/slider/wallpapper3.png'); height: 100%; width: 100%;"
+                >
+                    <div class="bg">
+                    </div>
+                    <div class="container">
+                        <div class="text">
+                            <h2 class="text-green roleway-extrabold">Soinfarma</h2>
+                            <p class="text-white roleway-bold">Es un sistema diseñado para satisfacer las necesidades operativas de negocios enfocados a la compra, venta y administración del inventario de farmacias.</p>
+                        </div>
+                    </div>
+                </div>
+                <div 
+                class="carousel-item" 
+                id="carousel-item-2" 
+                style="background-image: url('assets/img/home/slider/wallpapper2.png'); height: 100%; width: 100%;">
+                    <div class="bg">
+                    </div>
+                    <div class="container">
+                        <div class="text">
+                            <h2 class="text-green roleway-extrabold">Misión</h2>
+                            <p class="text-white roleway-bold">Brindar a las farmacias la oportunidad de tener una gestión eficaz y eficiente de sus operaciones mediante un sistema automatizado que permita de manera sencilla llevar un control de inventario, ventas y compras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                 class="carousel-item" 
+                id="carousel-item-3"
+                style="background-image: url('assets/img/home/slider/wallpapper1.png'); height: 100%; width: 100%;"
+                > 
+                    <div class="bg">
+                    </div>
+                    <div class="container">
+                        <div class="text">
+                            <h2 class="text-green roleway-extrabold">Visión</h2>
+                            <p class="text-white roleway-bold">Ser un software dinámico que potencie las capacidades tecnológicas de las farmacias y las integre ágilmente a la transformación digital del sector salud.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <a 
+                class="carousel-control-prev bg-green" 
+                role="button" 
+                data-slide="prev" 
+                id="previus" 
+                style="opacity: 1;" 
+                (click)="previus()">
+                    <span class="carousel-control-prev-icon text-white" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a 
+                class="carousel-control-next bg-green" 
+                role="button" 
+                data-slide="next" 
+                id="next" 
+                style="opacity: 1;"
+                (click)="next()">
+                    <span class="carousel-control-next-icon text-white" aria-hidden="true" ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container-fluid" style="position: relative;">
+    <img src="assets/img/banners.png" alt="" class="scroll-one">
+    <div class="container" id="beneficios">
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="target">
+                    <h3 class="text-green text-center text-bold mt-3">Beneficios <br class="d-block d-lg-none">para la farmacia</h3>
+                    <div class="row">
+                        <div class="col-lg-4 beneficio" *ngFor="let beneficio of beneficios; index as i">
+                            <div class="icon">
+                                <img src="assets/svg/{{ beneficio.icon }}">
+                            </div>
+                            <strong>{{ beneficio.title }}</strong>
+                            <p>{{ beneficio.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/img/banners.png" alt="" class="scroll-two">
+</div>
+
+
+<div class="container-fluid bg-gray-light p-1 pt-4 pb-4 p-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="d-block text-center"> La experiencia de nuestros clientes</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4 mt-5 mb-5" *ngFor="let testimoinal of testimoinals; index as i">
+                <div class="card testimonial">
+                    <div class="card-body">
+                        <span class="material-icons text-green">
+                            format_quote
+                        </span>
+                        <i>{{ testimoinal.testimonial }}</i>
+
+                        <p class="text-center text-green text-bold">{{ testimoinal.name}} - {{ testimoinal.business}}</p>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-1 p-lg-5 pb-5" id="support">
+    <div class="bg-green"></div>
+    <div class="container p-0 pb-lg-5">
+        <div class="row p-0 pb-lg-5">
+            <div class="col-12 m-auto" style="max-width: 1000px;" id="support_btn">
+                <h2 class="text-white text-center mt-5">Soporte técnico</h2>
+                <p class="text-white text-center mt-3">En nuestro departamento de soporte técnico te brindamos el servicio de instalación del software en tu farmacia, Entrenamos a tu personal off y online en el uso eficaz del sistema de gestión,  y te acompañamos en el camino para garantizar un funcionamiento óptimo en tu farmacia.</p>
+                <button class="d-none d-lg-block  btn btn-white m-auto d-block mt-3" style="max-width: 700px;"
+                onclick="window.location ='https://api.whatsapp.com/message/EL7MEFFXKM5XA1'">
+                    Para contactar al soporte técnico<br class="d-block d-lg-none"> escríbenos al <span class="material-icons">whatsapp</span> WhatsApp 
+                </button>
+                <button class="d-block d-lg-none btn btn-white m-auto d-block mt-3" style="max-width: 700px;"
+                onclick="window.location ='https://api.whatsapp.com/message/EL7MEFFXKM5XA1'">
+                    Soporte técnico <span class="material-icons" >whatsapp</span> 
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-gray-light" id="contact">
+    <div class="container pt-5 pb-5">
+        <h2 class="text-green text-center mt-5 mb-5">Contáctanos</h2>
+        <div class="alert alert-success" role="alert" *ngIf="sendedEmail">
+           El mensaje ha sido enviado correctamente
+        </div>
+        <form class="w-75 m-auto d-block" (submit)="sendEmail()" [formGroup]="formEmail" *ngIf="!loadingEmail">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <input 
+                            class="form-control" 
+                            type="text" 
+                            placeholder="Nombre"
+                            name="name"
+                            formControlName="name"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <input 
+                            class="form-control" 
+                            type="text" 
+                            placeholder="Email"
+                            name="email"
+                            formControlName="email"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <input 
+                            class="form-control" 
+                            type="text" 
+                            placeholder="Teléfono"
+                            name="phone"
+                            formControlName="phone"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <input 
+                            class="form-control"
+                            type="text" 
+                            placeholder="Farmacia"
+                            name="business"
+                            formControlName="business"
+                            >
+                        </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <textarea 
+                            class="form-control" 
+                            id="message" 
+                            cols="30" 
+                            rows="10" 
+                            placeholder="Mensaje"
+                            formControlName="message"
+                            name="message">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="submit" class="btn btn-green d-block m-auto w-100" value="ENVIAR">
+                </div>
+            </div>
+        </form>
+        <div class="progress-circular" *ngIf="loadingEmail">
+            <div class="progress-circular-wrapper">
+              <div class="progress-circular-inner">
+                <div class="progress-circular-left">
+                  <div class="progress-circular-spinner"></div>
+                </div>
+                <div class="progress-circular-gap"></div>
+                <div class="progress-circular-right">
+                  <div class="progress-circular-spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+

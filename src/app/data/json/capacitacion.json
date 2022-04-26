@@ -1,0 +1,106 @@
+[
+    {
+        "title": "Venta",
+        "content": [
+            {
+                "id":2,
+                "url": "https://www.youtube.com/embed/MgT7nym8r0c",
+                "title": "Punto de Venta",
+                "time": "6 min"
+            },
+            {
+                "id":1,
+                "url": "https://www.youtube.com/embed/b_9Y0OGUrls",
+                "title": "Orden de visualización.",
+                "time": "2 min"
+            },
+            {
+                "id":2,
+                "url": "https://www.youtube.com/embed/V3E_dENLN4o",
+                "title": "Nota de entrega",
+                "time": "3 min"
+            }
+        ]
+    },
+    {
+        "title": "Inventario",
+        "content": [
+            {
+                "id":4,
+                "url": "https://www.youtube.com/embed/BPEjpDw4",
+                "title": "Inventario",
+                "time": "7 min",
+                "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet doloremque perspiciatis quibusdam cum similique accusamus in ipsa veniam, officiis id libero? Harum ea ullam qui quos totam nihil deserunt in."
+            }
+        ]
+    },
+    {
+        "title": "Compras",
+        "content": [
+            {
+                "id":8,
+                "url": "https://www.youtube.com/embed/DVKIsQuc-4E",
+                "title": "Proveedor",
+                "time": "5 min"
+            },
+            {
+                "id":9,
+                "url": "https://www.youtube.com/embed/rEQ00yTohYc",
+                "title": "Orden de compra",
+                "time": "6 min"
+            },
+            {
+                "id":7,
+                "url": "https://www.youtube.com/embed/v0ty01xy8ho",
+                "title": "Recepción de Mercancía",
+                "time": "3 min"
+            },
+            {
+                "id":5,
+                "url": "https://www.youtube.com/embed/WYeFmZqmhGU",
+                "title": "Lista de Precio",
+                "time": "4 min"
+            },
+            {
+                "id":6,
+                "url": "https://www.youtube.com/embed/ENHqo88QkpE",
+                "title": "Retenciones",
+                "time": "3 min"
+            }
+        ]
+    },
+    {
+        "title": "Caja",
+        "content": [
+            {
+                "id":10,
+                "url": "https://www.youtube.com/embed/hUSEqRtTewg",
+                "title": "Caja",
+                "time": "5 min"
+            },
+            {
+                "id":11,
+                "url": "https://www.youtube.com/embed/2nkCibh4UOQ",
+                "title": "Apertura",
+                "time": "2 min"
+            },
+            {
+                "id":12,
+                "url": "https://www.youtube.com/embed/WN-Nz_wWHCA",
+                "title": "Cuadre",
+                "time": "6 min"
+            }
+        ]
+    },
+    {
+        "title": "Seguridad",
+        "content": [
+            {
+                "id":3,
+                "url": "https://www.youtube.com/embed/LQdeQFvbDaA",
+                "title": "Usuarios y Roles",
+                "time": "3 min"
+            }        
+        ]
+    }
+]

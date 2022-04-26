@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+ }
+
+ #top{
+     position: relative;
+     overflow:hidden;
+ }
+
+ #top .bg-blue{
+     position: absolute;
+     top:0px;
+     left:0px;
+     bottom:0px;
+     right:0px;
+     display:block;
+     margin:auto;
+     width: 100%;
+     height: 100%;
+     background-color: var(--bg-blue);
+     z-index: 50;
+     opacity: .7;
+ }
+
+ #top{
+     min-height: 400px;
+     background-image: url('./../../../assets/img/capacitacion/top.jpg');
+     background-size: cover;
+     background-position: center;
+ }
+
+@media only screen and (max-width:968px){
+    .mat-expansion-panel-header{
+        height:150px;
+    }
+}

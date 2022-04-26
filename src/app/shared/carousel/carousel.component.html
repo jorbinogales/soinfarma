@@ -1,0 +1,44 @@
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade p-5" data-ride="carousel">
+    <ol class="carousel-indicators" >
+        <li 
+        *ngFor="let item of items; index as i"
+        data-target="#carouselExampleIndicators" 
+        data-slide-to="i" 
+        class="indicator" 
+        [ngClass]="i == 0 ? 'indicator inactive' : 'indicator'">
+        </li>
+    </ol>
+    <div class="carousel-inner">
+        <div 
+        class="carousel-item" 
+        *ngFor="let item of items; index as i"
+        [ngClass]="i == 0 ? 'carousel-item active' : 'carousel-item'"
+        >
+            <div class="row">
+                <div class="col-12 col-lg-6 p-5 text">
+                    <h2 class="text-green">{{ item.title }}</h2>
+                    <p class="text-dark">{{ item.text }}</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="img">
+                        <img class="d-block w-100" src="assets/img/home/carousel/{{ item.img }}" alt="First slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" 
+        role="button" 
+        data-slide="prev" 
+        style="position: absolute; top:50px; left:0px; right:0px; margin-left:200px; transform: rotate(90deg);">
+        <span class="carousel-control-prev-icon text-green" aria-hidden="true"></span>
+        <span class="sr-only text-green">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" 
+        role="button" 
+        data-slide="next" 
+        style="position: absolute;bottom:100px;top: 100p;left: 0px;right: 0px;margin-left: 200px;top: 300px !important;transform: rotate(90deg);">
+        <span class="carousel-control-next-icon text-green" aria-hidden="true"></span>
+        <span class="sr-only text-green">Next</span>
+    </a>
+</div>

@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg"  *ngIf="url != '/landing'">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="" id="logo">
+    </a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto p-3 w-100">
+                <li class="nav-item m-auto" *ngFor="let item of menu; index as i" routerLinkActive="active">
+                    <a *ngIf="item.type === 'section'" class="nav-link" 
+                        href="#{{item.path}}"
+                        (click)="changeRoute('/home')">
+                        {{ item.title}}
+                    </a>
+                    <a  *ngIf="item.type != 'section'" class="nav-link"
+                        [routerLink]="[ item.path ]" 
+                        (click)="changeRoute(item.path)"
+                        >
+                        {{ item.title }}
+                    </a>
+                </li>
+                <li>
+                    <button (click)="changeRoute('/landing')" [routerLink]="['/', 'landing']" [ngClass]="url === '/landing' ? 'btn btn-green' : 'btn btn-white'">SER CLIENTE</button>
+                </li>
+        </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-light position-relative"  *ngIf="url == '/landing'">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logo-color.png" alt="" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto p-3 w-100">
+                <li class="nav-item m-auto" *ngFor="let item of menu; index as i" routerLinkActive="active">
+                    <a *ngIf="item.type === 'section'" class="nav-link" 
+                        href="#{{item.path}}"
+                        (click)="changeRoute('/home')">
+                        <span class="text-blue">{{ item.title}}</span>
+                    </a>
+                    <a  *ngIf="item.type != 'section'" class="nav-link"
+                        [routerLink]="[ item.path ]" 
+                        (click)="changeRoute(item.path)"
+                        >
+                        <span class="text-blue">{{ item.title }}</span>
+                    </a>
+                </li>
+                <li>
+                    <button (click)="changeRoute('/landing')" [routerLink]="['/', 'landing']" [ngClass]="url === '/landing' ? 'btn btn-green' : 'btn btn-white'">SER CLIENTE</button>
+                </li>
+        </ul>
+    </div>
+  </nav>

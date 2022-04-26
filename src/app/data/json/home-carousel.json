@@ -1,0 +1,17 @@
+[
+    {
+        "title":"SOINFARMA",
+        "text": "Es un sistema diseñado para satisfacer las necesidades operativas de negocios enfocados a la compra, venta y administración del inventario de farmacias.",
+        "img": "carousel1.png"
+    },
+    {
+        "title":"Misión",
+        "text": "Brindar a las farmacias la oportunidad de tener una gestión eficaz y eficiente de sus operaciones mediante un sistema automatizado que permita de manera sencilla llevar un control de inventario, ventas y compras.",
+        "img": "carousel1.png"
+    },
+    {
+        "title":"Visión",
+        "text": "Ser un software dinámico que potencie las capacidades tecnológicas de las farmacias y las integre ágilmente a la transformación digital del sector salud.",
+        "img": "carousel1.png"
+    }
+]

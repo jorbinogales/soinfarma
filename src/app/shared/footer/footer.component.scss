@@ -1,0 +1,43 @@
+#logo{
+    max-width: 200px;
+}
+
+.flex-wrap span{
+    font-size: 25px !important;
+    text-align: center;
+}
+
+#menu{
+    display: block;
+    width: 100%;
+    height:auto;
+    padding: 0px 5px;
+}
+#menu .item{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+#info li{
+    position: relative;
+    margin-top: 50px;
+}
+
+#info p{
+    color:white;
+    margin-left:50px;
+}
+
+#info img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: block;
+    width:30px;
+    margin:auto;
+}
